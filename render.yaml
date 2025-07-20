@@ -25,7 +25,6 @@ services:
     runtime: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/build
-    plan: free
     envVars:
       - key: NODE_VERSION
         value: 18.17.0

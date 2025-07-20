@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material';
 import Navbar from './components/Navbar';
@@ -12,10 +12,20 @@ import About from './pages/About';
 const DRAWER_WIDTH = 240;
 
 const App: React.FC = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const handleDrawerClose = () => {
+    setMobileOpen(false);
+  };
+
   return (
     <Box sx={{ display: 'flex' }}>
-      <Navbar />
-      <Sidebar />
+      <Navbar onMenuClick={handleDrawerToggle} />
+      <Sidebar mobileOpen={mobileOpen} onMobileClose={handleDrawerClose} />
       <Box
         component="main"
         sx={{

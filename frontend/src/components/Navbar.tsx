@@ -12,9 +12,14 @@ import {
   Notifications as NotificationsIcon,
   Security as SecurityIcon,
   Settings as SettingsIcon,
+  Menu as MenuIcon,
 } from '@mui/icons-material';
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  onMenuClick?: () => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
   return (
     <AppBar
       position="fixed"
@@ -24,6 +29,14 @@ const Navbar: React.FC = () => {
       }}
     >
       <Toolbar>
+        <IconButton
+          color="inherit"
+          edge="start"
+          onClick={onMenuClick}
+          sx={{ mr: 2, display: { sm: 'none' } }}
+        >
+          <MenuIcon />
+        </IconButton>
         <SecurityIcon sx={{ mr: 2 }} />
         <Box sx={{ flexGrow: 1 }}>
           <Typography variant="h6" component="div">

@@ -42,9 +42,6 @@ const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
           <Typography variant="h6" component="div">
             Smart Voice Guard
           </Typography>
-          <Typography variant="caption" sx={{ color: 'rgba(255, 255, 255, 0.7)' }}>
-            제11회 과학치안 아이디어 공모전 출품작
-          </Typography>
         </Box>
         
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>

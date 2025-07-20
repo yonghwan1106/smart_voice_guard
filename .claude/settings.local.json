@@ -7,7 +7,9 @@
       "Bash(git remote add:*)",
       "Bash(git push:*)",
       "Bash(git ls-tree:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "WebFetch(domain:smart-voice-guard-frontend.onrender.com)",
+      "WebFetch(domain:smart-voice-guard-api.onrender.com)"
     ],
     "deny": []
   }

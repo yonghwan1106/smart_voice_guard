@@ -1,0 +1,5 @@
+name: production
+url: https://smart-voice-guard-frontend.onrender.com
+deployment_branch_policy:
+  protected_branches: true
+  custom_branch_policies: false

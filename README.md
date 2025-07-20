@@ -1,6 +1,10 @@
 # Smart Voice Guard (SVG) 프로토타입
 
-AI 기반 사기 전화 차단 시스템 프로토타입 (자동 배포 테스트)
+[![Deploy to Render](https://github.com/yonghwan1106/smart_voice_guard/actions/workflows/deploy.yml/badge.svg)](https://github.com/yonghwan1106/smart_voice_guard/actions/workflows/deploy.yml)
+[![Frontend](https://img.shields.io/badge/Frontend-Live-brightgreen?style=flat&logo=render)](https://smart-voice-guard-frontend.onrender.com)
+[![Backend](https://img.shields.io/badge/Backend-Live-brightgreen?style=flat&logo=render)](https://smart-voice-guard-api.onrender.com)
+
+AI 기반 사기 전화 차단 시스템 프로토타입
 
 ## 프로젝트 구조
 

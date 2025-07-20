@@ -168,9 +168,18 @@ const About: React.FC = () => {
               직관적인 웹 인터페이스를 통해 실시간 모니터링과 관리가 가능합니다.
             </Typography>
             
-            <Alert severity="info" sx={{ mt: 2 }}>
+            <Alert severity="warning" sx={{ mt: 2, mb: 2 }}>
               <Typography variant="body2">
-                <strong>개발 기간:</strong> 2024년 7월 (프로토타입)<br />
+                <strong>⚠️ 프로토타입 안내</strong><br />
+                이 시스템은 개념 증명(PoC)을 위한 프로토타입으로, <strong>가상 데이터와 시뮬레이션</strong>을 기반으로 구현되었습니다. 
+                실제 통신망 연동이나 실시간 음성 처리는 포함되지 않으며, 
+                대시보드의 통계 및 분석 결과는 데모 목적의 샘플 데이터입니다.
+              </Typography>
+            </Alert>
+            
+            <Alert severity="info" sx={{ mt: 1 }}>
+              <Typography variant="body2">
+                <strong>개발 기간:</strong> 2025년 7월 (프로토타입)<br />
                 <strong>개발 언어:</strong> Python, TypeScript<br />
                 <strong>주요 기술:</strong> AI/ML, 자연어 처리, 음성 인식, 웹 개발
               </Typography>
@@ -399,14 +408,28 @@ const About: React.FC = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
+        
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>현재 보여지는 데이터는 실제 데이터인가요?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              아니요. 현재 시스템은 <strong>프로토타입 단계</strong>로, 대시보드에 표시되는 모든 통계, 
+              분석 결과, 성능 지표는 <strong>가상 데이터와 시뮬레이션</strong>을 기반으로 합니다. 
+              실제 통신망과의 연동이나 실시간 음성 데이터 처리는 향후 상용화 단계에서 구현될 예정입니다. 
+              이는 개념 증명(PoC)을 위한 데모 환경입니다.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
       </Paper>
 
       {/* 푸터 */}
       <Alert severity="success" sx={{ mt: 4 }}>
         <Typography variant="body1">
-          <strong>제11회 과학치안 아이디어 공모전</strong> 출품작으로 개발된 이 시스템은 
-          보이스피싱 피해 예방을 위한 혁신적인 AI 기술 솔루션입니다. 
-          실제 상용화를 통해 국민의 안전한 통신 환경 조성에 기여하고자 합니다.
+          <strong>제11회 과학치안 아이디어 공모전</strong> 출품작으로 개발된 이 프로토타입은 
+          보이스피싱 피해 예방을 위한 혁신적인 AI 기술 솔루션의 개념을 증명합니다. 
+          향후 실제 통신망 연동과 상용화를 통해 국민의 안전한 통신 환경 조성에 기여하고자 합니다.
         </Typography>
       </Alert>
     </Box>

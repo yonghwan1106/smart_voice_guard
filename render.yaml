@@ -2,7 +2,7 @@ services:
   # 백엔드 API 서버
   - type: web
     name: smart-voice-guard-api
-    runtime: python3
+    runtime: python
     buildCommand: pip install -r requirements.txt
     startCommand: cd backend && python main.py
     plan: free
@@ -19,10 +19,10 @@ services:
           property: connectionString
     healthCheckPath: /health
 
-  # 프론트엔드 웹앱
+  # 프론트엔드 정적 사이트
   - type: web
     name: smart-voice-guard-frontend
-    runtime: node
+    runtime: static
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/build
     plan: free

@@ -5,9 +5,15 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  deployments: write
+  actions: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production
     
     steps:
     - name: Checkout code

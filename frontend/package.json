@@ -2,6 +2,7 @@
   "name": "smart-voice-guard-frontend",
   "version": "1.0.0",
   "private": true,
+  "homepage": ".",
   "description": "Smart Voice Guard Dashboard - AI 기반 사기 전화 차단 시스템 웹 인터페이스",
   "dependencies": {
     "react": "^18.2.0",
